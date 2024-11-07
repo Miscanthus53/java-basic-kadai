@@ -5,12 +5,6 @@ public class Car_Chapter15 {
 	private int gear = 	1;
 	private int speed = 10;
 	
-	public Car_Chapter15(int gear, int speed) {
-		
-		this.gear = gear;
-		this.speed = speed;
-		
-	}
 	int beforeGear = this.gear;
 	
 	public void gearChange(int afterGear) {
