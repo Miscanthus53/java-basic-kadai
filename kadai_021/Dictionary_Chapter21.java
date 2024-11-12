@@ -3,10 +3,13 @@ import java.util.HashMap;
 
 public class Dictionary_Chapter21 {
 	
+	//辞書を調べるsearchメソッド
 	public static void search(String[] word) {
 		
+		//HashMap dictionaryの宣言
 		HashMap<String,String> dictionary = new HashMap<String, String>();
 		
+		//dictionaryに単語を追加
 		dictionary.put("apple","りんご");
 		dictionary.put("peach","桃");
 		dictionary.put("banana","バナナ");
@@ -18,7 +21,7 @@ public class Dictionary_Chapter21 {
 		dictionary.put("muscat","マスカット");
 		dictionary.put("cherry","さくらんぼ");
 		
-		
+		//英語がdictionrayに存在するか調べる
 		for(String eng : word) {
 			boolean exist = dictionary.containsKey(eng);
 			if (exist) {
